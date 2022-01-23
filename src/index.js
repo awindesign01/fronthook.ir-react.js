@@ -7,6 +7,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LangDet from "i18next-browser-languagedetector";
 import HttpApi from "i18next-http-backend";
+import { BrowserRouter as Router } from "react-router-dom";
 
 i18n
 	.use(initReactI18next)
@@ -23,18 +24,19 @@ i18n
 		},
 	});
 
-// ---
+// --- animation loading
 const loadingMarkUp = (
 	<div>
 		<h2>loading ...</h2>
 	</div>
 );
-// ---
 
 ReactDOM.render(
-	<Suspense fallback={loadingMarkUp}>
-		<App />
-	</Suspense>,
+	<Router>
+		<Suspense fallback={loadingMarkUp}>
+			<App />
+		</Suspense>
+	</Router>,
 	document.getElementById("root"),
 );
 
