@@ -1,3 +1,9 @@
 {
-   "text": "english"
+   "text": "english",
+
+   "home": "Home",
+   "courses": "Courses",
+   "blog": "Blog",
+   "about-us": "About us",
+   "account": "Account"
 }
