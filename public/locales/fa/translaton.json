@@ -1,9 +1,33 @@
 {
-   "text": "farsy",
+   "text": "Persian",
+   "symbol_price": "تومان",
    
    "home": "خانه",
    "courses": "دوره ها",
    "blog": "وبلاگ",
    "about-us": "درباره ما",
-   "account": "حساب"
+   "account": "حساب",
+
+   "name_course_1": "دوره حرفه ای متخصص ریکت و ریداکس",
+   "totalTimeLearn_1": "۳۵",
+   "priceCours_1": "۱,۹۲۹,۰۰۰",
+   "name_course_2": "دوره جامع و پیشرفته جاوا اسکریپت",
+   "totalTimeLearn_2": "۲۰",
+   "priceCours_2": "۱,۲۱۹,۰۰۰",
+   "name_course_3": "دوره گیت و گیت هاب",
+   "totalTimeLearn_3": "۳",
+   "priceCours_3": "۱۹۹,۰۰۰",
+   "name_course_4": "دوره پروژه محور فلکس و گرید",
+   "totalTimeLearn_4": "۲.۳۰",
+   "priceCours_4": "۱۹۰,۰۰۰",
+   "name_course_5": "VS Code دوره حرفه ای کار با",
+   "totalTimeLearn_5": "۱.۵",
+   "priceCours_5": "۵۹,۰۰۰",
+   "name_course_6": "دوره طراحی وب ریسپانسیو",
+   "totalTimeLearn_6": "۱۴",
+   "priceCours_6": "۳۹۸,۰۰۰",
+   "course_registration": "ثبت نام دوره",
+   "time": "مدت",
+   "hours": "ساعت",
+   "information_courses": "اطلاعات بیشتر"
 }

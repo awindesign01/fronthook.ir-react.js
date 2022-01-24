@@ -1,9 +1,33 @@
 {
-   "text": "english",
+   "text": "English",
+   "symbol_price": "$",
 
    "home": "Home",
    "courses": "Courses",
    "blog": "Blog",
    "about-us": "About us",
-   "account": "Account"
+   "account": "Account",
+
+   "name_course_1": "Professional course of React and Redux specialists",
+   "totalTimeLearn_1": 35,
+   "priceCours_1": 58,
+   "name_course_2": "Comprehensive and advanced JavaScript course",
+   "totalTimeLearn_2": 20,
+   "priceCours_2": 30,
+   "name_course_3": "Git and GitHub period",
+   "totalTimeLearn_3": 3,
+   "priceCours_3": 5,
+   "name_course_4": "Flex and Grid project-oriented course",
+   "totalTimeLearn_4": 2.5,
+   "priceCours_4": 4.89,
+   "name_course_5": "Professional course work with VS Code",
+   "totalTimeLearn_5": 1.5,
+   "priceCours_5": 1.59,
+   "name_course_6": "Responsive web design course",
+   "totalTimeLearn_6": 14,
+   "priceCours_6": 10,
+   "course_registration": "course registration",
+   "time": "time",
+   "hours": "hours",
+   "information_courses": "information courses"
 }

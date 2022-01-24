@@ -7,8 +7,8 @@ import { NavLink } from "react-router-dom";
 const MenuPhone = () => {
 	const { t } = useTranslation();
 	const NavLinkApi = [
-		{ name: t("courses"), path: "/courses", icon: <FiCode /> },
 		{ name: t("blog"), path: "/blog", icon: <ImBlog /> },
+		{ name: t("courses"), path: "/courses", icon: <FiCode /> },
 		{ name: t("home"), path: "/", icon: <FiHome />, exact: "true" },
 		{ name: t("about-us"), path: "/about-us", icon: <FiUsers /> },
 		{ name: t("account"), path: "/account", icon: <FiUser /> },
@@ -19,7 +19,7 @@ const MenuPhone = () => {
 		transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
 		transitionDuration: "150ms",
 		transform: "translateY(-1.75rem) rotate(45deg)",
-		backgroundColor: "rgba(109, 40, 217)",
+		backgroundColor: "#7e22ce",
 		color: "#fff",
 	};
 
@@ -36,7 +36,7 @@ const MenuPhone = () => {
 								to={e.path}
 								exact={e.exact}
 								style={({ isActive }) => (isActive ? activeStyle : undefined)}
-								className="NavLink rounded-lg w-12 h-12 bg-white dark:bg-main-dark flex justify-center items-center text-3xl text-[#733dd8] z-20"
+								className="NavLink rounded-lg w-12 h-12 bg-white dark:bg-main-dark flex justify-center items-center text-3xl text-purple-700 z-20"
 							>
 								{e.icon}
 							</NavLink>

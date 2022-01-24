@@ -1,9 +1,8 @@
-import React from 'react';
+import React from "react";
+// import Products from "../HOC/Products/products";
 
 const PageHome = () => {
-  return <div>
-     home page
-  </div>;
+	return <section className="w-full h-auto"></section>;
 };
 
 export default PageHome;

@@ -32,7 +32,7 @@ const Header = () => {
 				<nav className="w-1/2 h-full flex justify-start items-center">
 					<div className="sm:ml-4 ltr:mr-4 w-7 h-7 grid place-items-center">
 						<NavLink to="/">
-							<img src={Logo} alt="logo site" />
+							<img src={Logo} alt="logo site" className="sm:w-10" />
 						</NavLink>
 					</div>
 					<div className="hidden sm:block w-auto h-full">
@@ -76,16 +76,16 @@ const Header = () => {
 								className="h-full w-full"
 							>
 								{!isTheme ? (
-									<FiSun className="w-full h-full text-main-site-color" />
+									<FiSun className="w-full h-full text-purple-700" />
 								) : (
-									<FiMoon className="w-full h-full text-main-site-color" />
+									<FiMoon className="w-full h-full text-purple-700" />
 								)}
 							</button>
 						</NavLink>
 					</div>
 					<div className="h-6 w-10 flex justify-center">
 						<NavLink to="/shoping-cart">
-							<FiShoppingCart className="w-full h-full text-main-site-color" />
+							<FiShoppingCart className="w-full h-full text-purple-700" />
 							<div className="w-5 h-5 relative bottom-8 left-3 bg-red-500 rounded-full grid place-items-center text-sm text-white">
 								0
 							</div>
@@ -93,7 +93,7 @@ const Header = () => {
 					</div>
 					<div className="hidden sm:block h-6 w-10">
 						<NavLink to="/account">
-							<FiUser className="w-full h-full text-main-site-color" />
+							<FiUser className="w-full h-full text-purple-700" />
 						</NavLink>
 					</div>
 				</nav>
