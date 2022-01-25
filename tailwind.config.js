@@ -5,12 +5,11 @@ module.exports = {
 		extend: {
 			colors: {
 				"main-light": "#fafafa",
-				"main-dark": "#141431",
-				"subsidiary-dark": "#1d1e42",
+				"main-dark": "#1c1c1e",
+				"subsidiary-dark": "#28282b",
 				"main-site-color": "#733dd8",
 			},
 		},
 	},
 	plugins: [],
 };
-	

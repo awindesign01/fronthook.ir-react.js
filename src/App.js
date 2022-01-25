@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css"
 import { useTranslation } from "react-i18next";
 import cookies from "js-cookie";
 import { languages } from "./language";

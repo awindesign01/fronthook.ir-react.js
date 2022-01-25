@@ -36,12 +36,12 @@ const MenuPhone = () => {
 								to={e.path}
 								exact={e.exact}
 								style={({ isActive }) => (isActive ? activeStyle : undefined)}
-								className="NavLink rounded-lg w-12 h-12 bg-white dark:bg-main-dark flex justify-center items-center text-3xl text-purple-700 z-20"
+								className="NavLink rounded-lg w-[50px] h-[50px] bg-white dark:bg-main-dark flex justify-center items-center text-3xl text-purple-700 z-20"
 							>
 								{e.icon}
 							</NavLink>
 							<nav className="nav_text fixed bottom-3 z-10">
-								<p className="text text-xs text-gray-500 font-bold text-center">{e.name}</p>
+								<p className="text text-xs text-gray-500 dark:text-gray-300 font-bold text-center">{e.name}</p>
 							</nav>
 						</li>
 					))}

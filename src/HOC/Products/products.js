@@ -30,7 +30,7 @@ const Products = () => {
 			priceCourse: t("priceCours_2"),
 			imageCourse: imgJS,
 			dataAos: "fade-up",
-			dataAosDelay: "300",
+			dataAosDelay: "200",
 			dataAosEasing: "ease",
 		},
 		{
@@ -39,7 +39,7 @@ const Products = () => {
 			priceCourse: t("priceCours_3"),
 			imageCourse: imgGit,
 			dataAos: "fade-up",
-			dataAosDelay: "600",
+			dataAosDelay: "400",
 			dataAosEasing: "ease",
 		},
 		{
@@ -48,7 +48,7 @@ const Products = () => {
 			priceCourse: t("priceCours_4"),
 			imageCourse: imgFlexGrid,
 			dataAos: "fade-up",
-			dataAosDelay: "900",
+			dataAosDelay: "600",
 			dataAosEasing: "ease",
 		},
 		{
@@ -57,7 +57,7 @@ const Products = () => {
 			priceCourse: t("priceCours_5"),
 			imageCourse: imgVSCode,
 			dataAos: "fade-up",
-			dataAosDelay: "1200",
+			dataAosDelay: "800",
 			dataAosEasing: "ease",
 		},
 		{
@@ -66,52 +66,55 @@ const Products = () => {
 			priceCourse: t("priceCours_6"),
 			imageCourse: imgHC,
 			dataAos: "fade-up",
-			dataAosDelay: "1500",
+			dataAosDelay: "1000",
 			dataAosEasing: "ease",
 		},
 	];
+
 	return (
 		<section className="w-full h-auto flex flex-row flex-wrap justify-between">
 			{ProductsInformation.map((p) => (
 				<div
-					className="py-1 mb-6 w-full h-auto sm:w-[48%] xl:w-[30%] bg-white dark:bg-subsidiary-dark rounded-xl shadow-lg dark:shadow-zinc-700"
+					className="mb-6 w-full h-auto lg:h-44 xl:h-52 sm:w-[48%] bg-white dark:bg-subsidiary-dark border-b-4 border-solid border-purple-500 rounded-xl shadow-lg dark:shadow-zinc-700 lg:flex z-0"
 					data-aos={`${p.dataAos}`}
 					data-aos-easing={p.dataAosEasing}
 					data-aos-delay={p.dataAosDelay}
 				>
-					<div className="mx-auto mb-1 w-[98%] h-60 rounded-lg">
+					<div className="mx-auto mb-1 lg:mb-0 w-full lg:w-1/2 h-60 lg:h-full rounded-lg">
 						<img
 							src={p.imageCourse}
 							alt={p.imageCourse}
 							className="w-full h-full object-cover rounded-lg"
 						/>
 					</div>
-					<div className="mx-auto mt-1 w-11/12 h-60 rounded-lg text-gray-700 dark:text-gray-300 font-bold flex flex-col justify-between">
+					<div className="lg:px-2 mx-auto mt-1 w-11/12 lg:w-1/2 h-60 lg:h-44 xl:h-52 rounded-lg text-gray-700 dark:text-gray-300 font-bold flex flex-col justify-between">
 						<div className="w-full h-[20%] flex items-center">
-							<h1 className="text-[18px] dark:text-white rtl:text-right ltr:text-left">{p.name}</h1>
+							<h1 className="text-[18px] lg:text-sm dark:text-white rtl:text-right ltr:text-left">
+								{p.name}
+							</h1>
 						</div>
 						<div className="w-full h-[30%] flex rtl:flex-col ltr:flex-col-reverse justify-between items-start text-gray-500 dark:text-gray-400">
 							<div className="flex items-center">
-								<BsClockHistory className="text-2xl rtl:ml-2 ltr:mr-2 text-main-site-color " />
-								<p>
+								<BsClockHistory className="text-2xl lg:text-xl rtl:ml-2 ltr:mr-2 text-main-site-color " />
+								<p className="lg:text-sm">
 									{t("time")} :<span> </span>
 									{p.totalTimeLearn}
 									<span> </span>
 									{t("hours")}
 								</p>
 							</div>
-							<div className="flex rtl:flex-row ltr:flex-row-reverse items-center text-main-site-color dark:text-purple-600">
+							<div className="flex lg:text-sm rtl:flex-row ltr:flex-row-reverse items-center text-main-site-color dark:text-purple-600 group">
 								<a href="#">{t("information_courses")}</a>
-								<FiArrowLeft className="text-xl rtl:mr-2 ltr:ml-2 transform transition-all rtl:hover:-translate-x-2 ltr:hover:translate-x-2" />
+								<FiArrowLeft className="text-xl lg:text-lg rtl:mr-2 ltr:ml-2 transform transition-all rtl:group-hover:-translate-x-2 ltr:group-hover:translate-x-2" />
 							</div>
 						</div>
 						<div className="w-full h-[30%] flex rtl:flex-row ltr:flex-row-reverse justify-between items-center">
 							<div>
-								<button className="w-36 h-12 text-white font-bold bg-gradient-to-tl from-purple-900 to-purple-700 rounded-lg">
+								<button className="w-36 lg:w-32 h-12 lg:h-9 text-white lg:text-sm font-bold bg-gradient-to-tl from-purple-900 to-purple-700 rounded-lg">
 									{t("course_registration")}
 								</button>
 							</div>
-							<div className="w-auto flex flex-row-reverse">
+							<div className="w-auto lg:text-sm flex flex-row-reverse">
 								<p className="rtl:mr-2 ltr:ml-2">{t("symbol_price")}</p>
 								<p> {p.priceCourse}</p>
 							</div>
