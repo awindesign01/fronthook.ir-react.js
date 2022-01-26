@@ -44,7 +44,7 @@ const Header = () => {
 										to={e.path}
 										exact={e.exact}
 										style={({ isActive }) => (isActive ? activeStyle : undefined)}
-										className="NavLink rounded-md w-full h-full bg-white hover:bg-purple-700 dark:hover:bg-purple-700 dark:bg-main-dark flex justify-center items-center text-md text-gray-500 hover:text-white dark:text-white z-20"
+										className="NavLink rounded-md w-full h-full bg-white hover:bg-purple-700 dark:hover:bg-purple-700 dark:bg-main-dark flex justify-center items-center text-md font-bold text-gray-500 hover:text-white dark:text-white z-20"
 									>
 										{e.name}
 									</NavLink>

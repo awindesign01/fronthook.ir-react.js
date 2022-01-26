@@ -19,7 +19,7 @@ function App() {
 	return (
 		<section>
 			<Layout>
-				<main className="mt-20 mx-auto w-[98%] xl:w-[1170px]">
+				<main className="mt-20 mb-20 sm:mb-0 mx-auto w-[95%] xl:w-[1170px]">
 					<MainRoutes />
 				</main>
 			</Layout>

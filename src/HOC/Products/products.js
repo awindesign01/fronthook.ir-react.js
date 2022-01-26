@@ -30,7 +30,7 @@ const Products = () => {
 			priceCourse: t("priceCours_2"),
 			imageCourse: imgJS,
 			dataAos: "fade-up",
-			dataAosDelay: "200",
+			dataAosDelay: "100",
 			dataAosEasing: "ease",
 		},
 		{
@@ -39,7 +39,7 @@ const Products = () => {
 			priceCourse: t("priceCours_3"),
 			imageCourse: imgGit,
 			dataAos: "fade-up",
-			dataAosDelay: "400",
+			dataAosDelay: "200",
 			dataAosEasing: "ease",
 		},
 		{
@@ -48,7 +48,7 @@ const Products = () => {
 			priceCourse: t("priceCours_4"),
 			imageCourse: imgFlexGrid,
 			dataAos: "fade-up",
-			dataAosDelay: "600",
+			dataAosDelay: "300",
 			dataAosEasing: "ease",
 		},
 		{
@@ -57,7 +57,7 @@ const Products = () => {
 			priceCourse: t("priceCours_5"),
 			imageCourse: imgVSCode,
 			dataAos: "fade-up",
-			dataAosDelay: "800",
+			dataAosDelay: "400",
 			dataAosEasing: "ease",
 		},
 		{
@@ -66,7 +66,7 @@ const Products = () => {
 			priceCourse: t("priceCours_6"),
 			imageCourse: imgHC,
 			dataAos: "fade-up",
-			dataAosDelay: "1000",
+			dataAosDelay: "500",
 			dataAosEasing: "ease",
 		},
 	];

@@ -18,7 +18,7 @@ i18n
 		fallbackLng: "fa",
 		detection: {
 			order: ["path", "cookie", "localStorage", "subdomain"],
-			caches: ["cookie"],
+			caches: ["cookie = fa"],
 		},
 		backend: {
 			loadPath: "/locales/{{lng}}/translaton.json",

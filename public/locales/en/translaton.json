@@ -29,5 +29,34 @@
    "course_registration": "course registration",
    "time": "time",
    "hours": "hours",
-   "information_courses": "information courses"
+   "information_courses": "information courses",
+
+   "first_text" : "Front Hooks Academy Courses",
+   "second_text" : "Learn programming fast, easy and project-oriented",
+   "text_button_banner": "View courses",
+   "roadmap_article_text": "If you still have a question, what period is useful for you ?",
+   "roadmap_article_link": "Be sure to read the Front and Roadmap article",
+
+   "inforamtion_courses_1_title": "Applied and project-oriented",
+   "inforamtion_courses_1_text": "Touch the market closely by working on professional projects",
+   "inforamtion_courses_2_title": "Short and high quality videos",
+   "inforamtion_courses_2_text": "Each topic is prepared in the form of a short and practical session",
+   "inforamtion_courses_3_title": "Accompanying the coach",
+   "inforamtion_courses_3_text": "You solve problems with professional trainers and with patience",
+   "inforamtion_courses_4_title": "quality guarantee",
+   "inforamtion_courses_4_text": "You will receive the best support and the most up-to-date level of training available in Iran",
+   "inforamtion_courses_5_title": "Money back guarantee",
+   "inforamtion_courses_5_text": "If you are not satisfied, you have 15 days to cancel",
+
+   "WIF": "What is front-end ?",
+   "frontend_intro": "Let me tell you very personally and far from clichéd definitions, what is front-end? Who does what? Every website or application has two basic parts. One side of the server that the user does not see and one side of the user that becomes the appearance of the site. You guessed it right, the things we do directly and see are called front sites. Like headers, footers, the main content of the site, registration forms, etc., all of which are the responsibility of the front-end developer. With the advent of attractive JavaScript frameworks such as vue.js and the React library (react.js), the task of Front has become much heavier, and much of the work that used to be done by a back-end developer is now done by Front and Kara. Maidan and this is why Front's employment market has become very hot and Front's salaries have increased a lot and everyone is looking for experts in this field. Congratulations on the mysterious and fascinating world of web programming, and especially Front. Use our experience and we are proud to be with you until you enter the job market.",
+
+   "statistics_text": "Statistics make us proud",
+   "statistics_update": "Last update : August 2021",
+   "statistics_histoy": "Years of professional activity",
+   "statistics_histoy_num": "4 +",
+   "statistics_student": "Private and online student",
+   "statistics_student_num": "1,320 +",
+   "statistics_satisfaction": "Satisfaction with training",
+   "statistics_satisfaction_num": "%100 +"
 }
