@@ -1,6 +1,7 @@
 import React from "react";
 import banner from "../../Assets/banner.png";
 import { useTranslation } from "react-i18next";
+import Button from "@mui/material/Button";
 
 const FirstBanner = () => {
 	const { t } = useTranslation();
@@ -17,19 +18,27 @@ const FirstBanner = () => {
 						</h1>
 					</div>
 					<div className="w-auto h-12 xl:h-16 grid place-items-center">
-						<p className="sm:text-sm xl:text-base font-bold text-gray-700 dark:text-gray-500">{t("second_text")}</p>
+						<p className="sm:text-sm xl:text-base font-bold text-gray-700 dark:text-gray-500">
+							{t("second_text")}
+						</p>
 					</div>
 					<div className="w-auto h-auto">
-						<button className="w-36 lg:w-32 h-12 sm:h-10 text-white sm:text-sm font-bold bg-gradient-to-tl from-purple-900 to-purple-700 rounded-lg">
-							{t("text_button_banner")}
-						</button>
+						<Button
+							variant="contained"
+							className="w-36 lg:w-32 h-12 sm:h-10 bg-gradient-to-tl from-purple-900 to-purple-700 rounded-lg"
+						>
+							<p className="text-white rtl:sm:text-base ltr:sm:text-xs font-bold">{t("text_button_banner")}</p>
+						</Button>
 					</div>
 					<div className="w-auto h-16 xl:h-16 grid place-items-center">
 						<p className="text-sm sm:text-xs xl:text-sm font-bold text-gray-500 dark:text-gray-600">
 							{t("roadmap_article_text")}
 							<br className="lg:hidden" />
 							<span> </span>
-							<a href="https://fronthooks.ir/learning-path" className="text-blue-600 dark:text-opacity-70">
+							<a
+								href="https://fronthooks.ir/learning-path"
+								className="text-blue-600 dark:text-opacity-70"
+							>
 								{t("roadmap_article_link")}
 							</a>
 						</p>

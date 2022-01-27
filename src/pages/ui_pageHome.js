@@ -1,4 +1,4 @@
-import Products from "../HOC/Products/products";
+import Products from "../Products/ui_products";
 import { useTranslation } from "react-i18next";
 import Icon1 from "../Assets/Icons/practical.svg";
 import Icon2 from "../Assets/Icons/time.svg";
@@ -6,7 +6,7 @@ import Icon3 from "../Assets/Icons/mentor.svg";
 import Icon4 from "../Assets/Icons/quality.svg";
 import Icon5 from "../Assets/Icons/refund.svg";
 import banner2 from "../Assets/front-course-title.svg";
-import FirstBanner from "../components/firstBanner/firstBanner";
+import FirstBanner from "../components/firstBanner/ui_firstBanner";
 import img from "../Assets/frontend-intro.svg";
 
 const PageHome = () => {
@@ -49,9 +49,11 @@ const PageHome = () => {
 			</article>
 			<article className="mb-6 w-full h-auto sm:h-auto lg:flex lg:flex-row-reverse lg:items-center">
 				<div className="w-full lg:w-2/3 h-auto">
-					<h1 className="mb-6 text-2xl font-bold text-gray-900">{t("WIF")}</h1>
-					<p className="mb-6 text-sm text-gray-700 leading-loose">{t("frontend_intro")}</p>
-					<p className="mb-6 text-sm sm:text-xs font-bold text-gray-500 dark:text-gray-600">
+					<h1 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">{t("WIF")}</h1>
+					<p className="mb-6 text-sm text-gray-700 dark:text-gray-300 leading-loose">
+						{t("frontend_intro")}
+					</p>
+					<p className="mb-6 text-sm sm:text-xs font-bold text-gray-500">
 						{t("roadmap_article_text")}
 						<br className="lg:hidden" />
 						<span> </span>
@@ -67,17 +69,23 @@ const PageHome = () => {
 					<img src={img} alt="frontend-intro" />
 				</div>
 			</article>
-			<article className="sm:mt-10 w-full h-[50vh] sm:h-[20vh] flex flex-col justify-evenly">
-				<h1 className="text-2xl font-bold text-gray-900">{t("statistics_text")}</h1>
-				<p className="text-sm text-gray-700">{t("statistics_update")}</p>
-				<div className="sm:flex sm:justify-between">
+			<article className="sm:mt-10 w-full h-[50vh] sm:h-[15vh] flex flex-col sm:flex-row justify-evenly items-center">
+				<div className="w-full sm:w-1/2 lg:w-1/3 h-auto">
+					<h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+						{t("statistics_text")}
+					</h1>
+					<p className="text-sm text-gray-700 dark:text-gray-500">{t("statistics_update")}</p>
+				</div>
+				<div className="w-full sm:w-1/2 lg:w-2/3 h-auto sm:flex sm:justify-between">
 					{inforamtionStatistics.map((i, index) => (
 						<div
-							className="px-4 my-3 w-full sm:w-[31%] h-14 bg-white rounded-lg shadow-lg flex justify-between items-center"
+							className="px-4 my-3 w-full sm:w-[31%] lg:w-[32%] h-14 sm:h-24 lg:h-14 bg-white dark:bg-subsidiary-dark rounded-lg shadow-lg dark:shadow-zinc-700 flex sm:flex-col lg:flex-row justify-between sm:justify-around lg:justify-between items-center sm:text-center"
 							key={index}
 						>
-							<p className="font-bold text-gray-900">{i.num}</p>
-							<h1 className="sm:text-xs font-bold text-purple-700">{i.text}</h1>
+							<p className="font-bold text-gray-900 dark:text-white">{i.num}</p>
+							<h1 className="sm:text-xs font-bold text-purple-700 dark:text-purple-400">
+								{i.text}
+							</h1>
 						</div>
 					))}
 				</div>

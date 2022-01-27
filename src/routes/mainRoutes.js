@@ -1,11 +1,11 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import PageHome from "../pages/pageHome";
-import PageCourses from "../pages/pageCourses";
-import PageBlog from "../pages/pageBlog";
-import PageAboutUs from "../pages/pageAboutUs";
-import PageCart from "../pages/pageCart";
-import PageAccount from "../pages/pageAccount";
+import PageHome from "../pages/ui_pageHome";
+import PageCourses from "../pages/ui_pageCourses";
+import PageBlog from "../pages/ui_pageBlog";
+import PageAboutUs from "../pages/ui_pageAboutUs";
+import PageCart from "../pages/ui_pageCart";
+import PageAccount from "../pages/ui_pageAccount";
 
 const MainRoutes = () => {
 	return (

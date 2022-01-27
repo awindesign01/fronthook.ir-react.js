@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css"
+import "./App.css";
 import { useTranslation } from "react-i18next";
 import cookies from "js-cookie";
 import { languages } from "./language";
@@ -12,8 +12,11 @@ function App() {
 	const { t } = useTranslation();
 
 	React.useEffect(() => {
-		// document.body.dir = currLang.dir || "ltr";
-		// document.title = t("text");
+		if (document.cookie.slice(8) === "fa") {
+			document.body.dir = currLang.dir || "ltr";
+		} else {
+			document.body.dir = currLang.dir || "rtl";
+		}
 	}, [currLang, t]);
 
 	return (

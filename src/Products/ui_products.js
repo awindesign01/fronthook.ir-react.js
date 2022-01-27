@@ -2,13 +2,14 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { BsClockHistory } from "react-icons/bs";
 import { FiArrowLeft } from "react-icons/fi";
-import imgReact from "../../Assets/ProductsImage/React.svg";
-import imgJS from "../../Assets/ProductsImage/javascript.svg";
-import imgGit from "../../Assets/ProductsImage/git.svg";
-import imgFlexGrid from "../../Assets/ProductsImage/flex-grid.svg";
-import imgVSCode from "../../Assets/ProductsImage/vs-code.png";
-import imgHC from "../../Assets/ProductsImage/html-css.png";
+import imgReact from "../Assets/ProductsImage/React.svg";
+import imgJS from "../Assets/ProductsImage/javascript.svg";
+import imgGit from "../Assets/ProductsImage/git.svg";
+import imgFlexGrid from "../Assets/ProductsImage/flex-grid.svg";
+import imgVSCode from "../Assets/ProductsImage/vs-code.png";
+import imgHC from "../Assets/ProductsImage/html-css.png";
 import AOS from "aos";
+import Button from "@mui/material/Button";
 
 const Products = () => {
 	const { t } = useTranslation();
@@ -79,6 +80,7 @@ const Products = () => {
 					data-aos={`${p.dataAos}`}
 					data-aos-easing={p.dataAosEasing}
 					data-aos-delay={p.dataAosDelay}
+					key={p.name}
 				>
 					<div className="mx-auto mb-1 lg:mb-0 w-full lg:w-1/2 h-60 lg:h-full rounded-lg">
 						<img
@@ -103,16 +105,19 @@ const Products = () => {
 									{t("hours")}
 								</p>
 							</div>
-							<div className="flex lg:text-sm rtl:flex-row ltr:flex-row-reverse items-center text-main-site-color dark:text-purple-600 group">
+							<div className="flex lg:text-sm rtl:flex-row ltr:flex-row items-center text-main-site-color dark:text-purple-600 group">
 								<a href="#">{t("information_courses")}</a>
-								<FiArrowLeft className="text-xl lg:text-lg rtl:mr-2 ltr:ml-2 transform transition-all rtl:group-hover:-translate-x-2 ltr:group-hover:translate-x-2" />
+								<FiArrowLeft className="text-xl lg:text-lg rtl:mr-2 ltr:ml-2 transform transition-all rtl:group-hover:-translate-x-2 ltr:group-hover:translate-x-2 ltr:rotate-180" />
 							</div>
 						</div>
-						<div className="w-full h-[30%] flex rtl:flex-row ltr:flex-row-reverse justify-between items-center">
+						<div className="w-full h-[30%] flex rtl:flex-row ltr:flex-row justify-between items-center">
 							<div>
-								<button className="w-36 lg:w-32 h-12 lg:h-9 text-white lg:text-sm font-bold bg-gradient-to-tl from-purple-900 to-purple-700 rounded-lg">
-									{t("course_registration")}
-								</button>
+								<Button
+									variant="contained"
+									className="w-36 lg:w-32 h-12 lg:h-9 lg:text-sm bg-gradient-to-tl from-purple-900 to-purple-700 rounded-lg"
+								>
+									<p className="text-white lg:text-xs font-bold">{t("course_registration")}</p>
+								</Button>
 							</div>
 							<div className="w-auto lg:text-sm flex flex-row-reverse">
 								<p className="rtl:mr-2 ltr:ml-2">{t("symbol_price")}</p>

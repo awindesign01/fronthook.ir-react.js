@@ -7,6 +7,7 @@ import { languages } from "../language";
 import i18next from "i18next";
 import UseDarkMode from "../hooks/theme/useDarkMode";
 import { useTranslation } from "react-i18next";
+import IconButton from "@mui/material/IconButton";
 
 const Header = () => {
 	const [isTheme, setIsTheme] = React.useState(true);
@@ -55,13 +56,12 @@ const Header = () => {
 				</nav>
 				<nav className="w-1/2 h-full flex justify-end items-center">
 					<div className="dropdown relative ml-2 h-1/2 w-8 flex justify-center items-center group">
-						<button className="w-full h-[80%] bg-white dark:bg-main-dark grid place-items-center">
-							<IoLanguage className="text-xl text-purple-700" />
+						<button>
+							<IconButton className="w-full h-[80%] bg-white dark:bg-main-dark grid place-items-center">
+								<IoLanguage className="text-xl text-purple-700" />
+							</IconButton>
 						</button>
-						<nav
-							className="hidden w-20 h-auto absolute top-full left-0 opacity-0 invisible bg-white dark:bg-main-dark transition-all border-2 dark:border-zinc-700 rounded-md transform group-focus-within:block group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-2"
-							tabindex="0"
-						>
+						<nav className="w-20 h-auto absolute flex justify-center items-center top-full left-0 opacity-0 invisible bg-white dark:bg-main-dark transition-all border-2 dark:border-zinc-700 rounded-md transform group-focus-within:block group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-2">
 							{languages.map((i) => (
 								<button
 									key={i.code}
@@ -75,35 +75,42 @@ const Header = () => {
 							))}
 						</nav>
 					</div>
-					<div className="h-6 w-10 flex">
+					<div className="h-10 w-10 rtl:flex">
 						<NavLink to="#">
-							<button
-								onClick={() => {
-									setIsTheme(!isTheme);
-									setTheme(theme);
-								}}
-								className="h-full w-full"
-							>
-								{!isTheme ? (
-									<FiSun className="w-full h-full text-purple-700" />
-								) : (
-									<FiMoon className="w-full h-full text-purple-700" />
-								)}
-							</button>
+							<IconButton className="h-full w-full">
+								<button
+									onClick={() => {
+										setIsTheme(!isTheme);
+										setTheme(theme);
+									}}
+								>
+									{!isTheme ? (
+										<FiSun className="text-purple-700" />
+									) : (
+										<FiMoon className="text-purple-700" />
+									)}
+								</button>
+							</IconButton>
 						</NavLink>
 					</div>
-					<div className="h-6 w-10 flex justify-center">
-						<NavLink to="/shoping-cart">
-							<FiShoppingCart className="w-full h-full text-purple-700" />
-							<div className="w-5 h-5 relative bottom-8 left-3 bg-red-500 rounded-full grid place-items-center text-sm text-white">
-								0
+					<div className="h-10 w-10">
+						<IconButton className="w-full h-full flex justify-center items-center">
+							<div className="w-full h-full flex flex-col justify-center items-center">
+								<NavLink to="/shoping-cart">
+									<FiShoppingCart className="w-full h-full text-purple-700" />
+									<div className="w-5 h-5 relative bottom-11 left-3 bg-red-500 rounded-full grid place-items-center text-sm text-white">
+										0
+									</div>
+								</NavLink>
 							</div>
-						</NavLink>
+						</IconButton>
 					</div>
-					<div className="hidden sm:block h-6 w-10">
-						<NavLink to="/account">
-							<FiUser className="w-full h-full text-purple-700" />
-						</NavLink>
+					<div className="hidden sm:block h-10 w-10">
+						<IconButton className="grid place-items-center">
+							<NavLink to="/account">
+								<FiUser className="w-full h-full text-purple-700" />
+							</NavLink>
+						</IconButton>
 					</div>
 				</nav>
 			</nav>
