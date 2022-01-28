@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { FiHome, FiCode, FiUsers, FiUser } from "react-icons/fi";
 import { ImBlog } from "react-icons/im";
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";	
 
 const MenuPhone = () => {
 	const { t } = useTranslation();
@@ -24,7 +24,7 @@ const MenuPhone = () => {
 	};
 
 	return (
-		<nav className="sm:hidden fixed bottom-0 left-0 w-full h-16 bg-white dark:bg-main-dark border-t-2 dark:border-zinc-700">
+		<nav className="sm:hidden fixed bottom-0 left-0 w-full h-16 bg-white dark:bg-main-dark border-t-2 dark:border-zinc-700 z-50">
 			<nav className="mx-auto w-[98%] h-[98%] bg-white dark:bg-main-dark rounded-tl-lg rounded-tr-lg shadow-lg flex justify-center items-center">
 				<ul className="flex w-full h-full justify-between ">
 					{NavLinkApi.map((e) => (

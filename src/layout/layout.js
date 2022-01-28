@@ -6,9 +6,13 @@ const index = ({ children }) => {
 	return (
 		<>
 			<Header />
-			{children}
+			<div className="w-full h-full flex flex-col justify-between items-center">
+				<div className="w-full h-auto">{children}</div>
+				<div className="w-full h-auto">
+					<Footer />
+				</div>
+			</div>
 			<MenuPhone />
-			<Footer />
 		</>
 	);
 };

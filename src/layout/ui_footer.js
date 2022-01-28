@@ -8,16 +8,16 @@ const Footer = () => {
 	const { t } = useTranslation();
 
 	const iconsLink = [
-		{ path: "#", icons: <FiInstagram /> },
-		{ path: "#", icons: <FaLinkedin /> },
-		{ path: "#", icons: <FaGithub /> },
-		{ path: "#", icons: <FaTwitter /> },
-		{ path: "#", icons: <FaTelegramPlane /> },
-		{ path: "#", icons: <FaYoutube /> },
+		{ path: "", icons: <FiInstagram /> },
+		{ path: "", icons: <FaLinkedin /> },
+		{ path: "", icons: <FaGithub /> },
+		{ path: "", icons: <FaTwitter /> },
+		{ path: "", icons: <FaTelegramPlane /> },
+		{ path: "", icons: <FaYoutube /> },
 	];
 
 	return (
-		<footer className="pb-8 mb-16 sm:mb-0 border-t-4 border-solid border-purple-500 rounded-tl-lg rounded-tr-lg w-full bg-gray-100 dark:bg-main-dark">
+		<footer className="pb-8 mb-16 sm:mb-0 border-t-4 border-solid border-purple-500 rounded-tl-lg rounded-tr-lg w-full h-auto sm:h-[45vh] bg-gray-100 dark:bg-main-dark">
 			<div className="mx-auto w-[95%] xl:w-[1170px]">
 				<section className="mx-auto w-[95%] sm:w-full h-[92%] sm:flex">
 					<div className="w-full h-auto sm:w-4/5">
@@ -25,11 +25,9 @@ const Footer = () => {
 						<p className="text-sm text-gray-500 dark:text-gray-400 leading-7">{t("text_footer")}</p>
 						<div className="w-full h-auto">
 							<ul className="mt-4 flex justify-between items-center">
-								{iconsLink.map((i) => (
-									<IconButton>
-										<li className="text-2xl text-gray-500 dark:text-gray-300">
-											{i.icons}
-										</li>
+								{iconsLink.map((i, index) => (
+									<IconButton key={index}>
+										<li className="text-2xl text-gray-500 dark:text-gray-300">{i.icons}</li>
 									</IconButton>
 								))}
 							</ul>

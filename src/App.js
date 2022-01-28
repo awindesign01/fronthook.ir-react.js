@@ -14,7 +14,7 @@ function App() {
 	React.useEffect(() => {
 		if (document.cookie.slice(8) === "fa") {
 			document.body.dir = currLang.dir || "ltr";
-		} else {
+		} else if (document.cookie.slice(8) === "en") {
 			document.body.dir = currLang.dir || "rtl";
 		}
 	}, [currLang, t]);
@@ -30,4 +30,4 @@ function App() {
 	);
 }
 
-export default App;
+export default React.memo(App);

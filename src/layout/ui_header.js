@@ -24,8 +24,8 @@ const Header = () => {
 	const activeStyle = {
 		transitionProperty: "all",
 		transitionDuration: "150ms",
-		backgroundColor: "rgb(126 ,34 ,206)",
-		color: "#fff",
+		color: "rgb(126 ,34 ,206)",
+		borderButtom: "2px solid rgb(126 ,34 ,206)",
 	};
 
 	return (
@@ -45,7 +45,7 @@ const Header = () => {
 										to={e.path}
 										exact={e.exact}
 										style={({ isActive }) => (isActive ? activeStyle : undefined)}
-										className="NavLink rounded-md w-full h-full bg-white hover:bg-purple-700 dark:hover:bg-purple-700 dark:bg-main-dark flex justify-center items-center text-md font-bold text-gray-500 hover:text-white dark:text-white z-20"
+										className="NavLink rounded-md w-full h-full bg-white hover:bg-purple-700 dark:hover:bg-purple-700 dark:bg-main-dark flex justify-center items-center text-sm font-bold text-gray-400 hover:text-white dark:text-white z-20"
 									>
 										{e.name}
 									</NavLink>
@@ -55,7 +55,7 @@ const Header = () => {
 					</div>
 				</nav>
 				<nav className="w-1/2 h-full flex justify-end items-center">
-					<div className="dropdown relative ml-2 h-1/2 w-8 flex justify-center items-center group">
+					<div className="dropdown relative h-1/2 w-8 flex justify-center items-center group">
 						<button>
 							<IconButton className="w-full h-[80%] bg-white dark:bg-main-dark grid place-items-center">
 								<IoLanguage className="text-xl text-purple-700" />
