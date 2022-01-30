@@ -1,3 +1,4 @@
+import React from 'react';
 import Products from "../Products/ui_products";
 import { useTranslation } from "react-i18next";
 import Icon1 from "../Assets/Icons/practical.svg";
@@ -8,10 +9,13 @@ import Icon5 from "../Assets/Icons/refund.svg";
 import banner2 from "../Assets/front-course-title.svg";
 import FirstBanner from "../components/firstBanner/ui_firstBanner";
 import img from "../Assets/frontend-intro.svg";
+import titlePages from "../utils/titlePages";
 
 const PageHome = () => {
 	const { t } = useTranslation();
-
+	React.useEffect(() => {
+		titlePages(t("home_title"));
+	}, []);
 	const inforamtionCourses = [
 		{ title: t("inforamtion_courses_1_title"), text: t("inforamtion_courses_1_text"), icon: Icon1 },
 		{ title: t("inforamtion_courses_2_title"), text: t("inforamtion_courses_2_text"), icon: Icon2 },

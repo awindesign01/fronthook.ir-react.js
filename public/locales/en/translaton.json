@@ -2,6 +2,13 @@
    "text": "English",
    "symbol_price": "$",
 
+   "home_title": "Front and specialized training | Front hooks",
+   "courses_title": "Corses | front hooks",
+   "cart_title": "Shoping cart | front hooks",
+   "blog_titles": "Blog | front hooks",
+   "account_title": "Account | front hooks",
+   "aboutus_title": "About us | front hooks",
+
    "home": "Home",
    "courses": "Courses",
    "blog": "Blog",

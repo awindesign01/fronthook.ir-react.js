@@ -1,9 +1,12 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import titlePages from "../utils/titlePages";
 
 const PageAboutUs = () => {
 	const { t } = useTranslation();
-
+	React.useEffect(() => {
+		titlePages(t("aboutus_title"));
+	}, []);
 	const boxItems = [
 		{
 			firstTitle: "Senior Front-end developer",
@@ -62,7 +65,9 @@ const PageAboutUs = () => {
 							<h1 className="text-sm text-purple-600 dark:text-white">{i.firstTitle}</h1>
 						</div>
 						<div>
-							<h2 className="text-xs text-gray-700 dark:text-gray-300 dark:text-opacity-70">{i.secondTitle}</h2>
+							<h2 className="text-xs text-gray-700 dark:text-gray-300 dark:text-opacity-70">
+								{i.secondTitle}
+							</h2>
 						</div>
 						<div className="mt-4">
 							<p className="text-sm text-gray-500 font-medium">{i.text}</p>

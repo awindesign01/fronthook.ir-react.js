@@ -1,6 +1,13 @@
 {
    "text": "Persian",
    "symbol_price": "تومان",
+
+   "home_title": "آموزش تخصصی فرانت اند | فرانت هوکس",
+   "courses_title": "دوره های آموزشی | فرانت هوکس",
+   "cart_title": "سبد خرید | فرانت هوکس",
+   "blog_titles": "وبلاگ | فرانت هوکس",
+   "account_title": "حساب کاربری | فرانت هوکس",
+   "aboutus_title": "درباره ما | فرانت هوکس",
    
    "home": "خانه",
    "courses": "دوره ها",

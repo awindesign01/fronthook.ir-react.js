@@ -1,10 +1,13 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { FiUser } from "react-icons/fi";
+import titlePages from "../utils/titlePages";
 
 const PageAccount = () => {
 	const { t } = useTranslation();
-
+	React.useEffect(() => {
+		titlePages(t("account_title"));
+	}, []);
 	return (
 		<div className="w-full h-auto sm:h-[47vh] xl:h-[44.5vh]">
 			<div className="p-3 mx-auto rounded-lg shadow-lg dark:shadow-zinc-700 text-black w-full sm:w-3/4 h-auto bg-white dark:bg-subsidiary-dark tracking-wide font-bold sm:flex sm:justify-around items-center">
