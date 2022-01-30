@@ -76,9 +76,6 @@ const Products = () => {
 
 	return (
 		<section className="w-full h-auto flex flex-row flex-wrap justify-between">
-			<article className="mb-6  w-full h-16 grid place-items-center">
-				<img src={banner2} alt="" />
-			</article>
 			{ProductsInformation.map((p) => (
 				<div
 					className="mb-6 w-full h-auto lg:h-44 xl:h-52 sm:w-[48%] bg-white dark:bg-subsidiary-dark border-b-4 border-solid border-purple-500 rounded-xl shadow-lg dark:shadow-zinc-700 lg:flex z-0"
