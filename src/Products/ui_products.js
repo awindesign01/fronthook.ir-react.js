@@ -10,6 +10,7 @@ import imgVSCode from "../Assets/ProductsImage/vs-code.png";
 import imgHC from "../Assets/ProductsImage/html-css.png";
 import AOS from "aos";
 import Button from "@mui/material/Button";
+import banner2 from "../Assets/front-course-title.svg";
 
 const Products = () => {
 	const { t } = useTranslation();
@@ -56,6 +57,7 @@ const Products = () => {
 			name: t("name_course_5"),
 			totalTimeLearn: t("totalTimeLearn_5"),
 			priceCourse: t("priceCours_5"),
+			priceCourseOffText: t("priceCours_5_off_text"),
 			imageCourse: imgVSCode,
 			dataAos: "fade-up",
 			dataAosDelay: "400",
@@ -74,6 +76,9 @@ const Products = () => {
 
 	return (
 		<section className="w-full h-auto flex flex-row flex-wrap justify-between">
+			<article className="mb-6  w-full h-16 grid place-items-center">
+				<img src={banner2} alt="" />
+			</article>
 			{ProductsInformation.map((p) => (
 				<div
 					className="mb-6 w-full h-auto lg:h-44 xl:h-52 sm:w-[48%] bg-white dark:bg-subsidiary-dark border-b-4 border-solid border-purple-500 rounded-xl shadow-lg dark:shadow-zinc-700 lg:flex z-0"
@@ -120,8 +125,22 @@ const Products = () => {
 								</Button>
 							</div>
 							<div className="w-auto lg:text-sm flex flex-row-reverse">
-								<p className="rtl:mr-2 ltr:ml-2">{t("symbol_price")}</p>
-								<p> {p.priceCourse}</p>
+								{p.name === t("name_course_5") ? (
+									<div>
+										<div className="mx-auto w-3/4 bg-red-500 text-white rounded-full text-center">
+											<p>{p.priceCourseOffText}</p>
+										</div>
+										<div className="flex flex-row-reverse line-through text-gray-400">
+											<p className="rtl:mr-2 ltr:ml-2">{t("symbol_price")}</p>
+											<p> {p.priceCourse}</p>
+										</div>
+									</div>
+								) : (
+									<>
+										<p className="rtl:mr-2 ltr:ml-2">{t("symbol_price")}</p>
+										<p> {p.priceCourse}</p>
+									</>
+								)}
 							</div>
 						</div>
 					</div>

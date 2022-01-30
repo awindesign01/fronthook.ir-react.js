@@ -23,6 +23,7 @@
    "name_course_5": "دوره حرفه ای کار با VS Code",
    "totalTimeLearn_5": "۱.۵",
    "priceCours_5": "۵۹,۰۰۰",
+   "priceCours_5_off_text": "رایگان",
    "name_course_6": "دوره طراحی وب ریسپانسیو",
    "totalTimeLearn_6": "۱۴",
    "priceCours_6": "۳۹۸,۰۰۰",
@@ -73,5 +74,11 @@
    "box_5_num_1": "۱۳۹۸",
    "box_5_num_2": "۱۳۹۵",
    "box_6_num_1": "۱۳۹۵",
-   "box_6_num_2": "۱۳۹۳"
+   "box_6_num_2": "۱۳۹۳",
+
+   "account_name": "علی دونیایی",
+   "account_email": "alidonyaee@gmail.com",
+
+   "cart_non_products": "هیچ محصولی ندارید",
+   "cart_go_products": "یه سر بزنیم فروشگاه"
 }

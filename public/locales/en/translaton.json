@@ -23,6 +23,7 @@
    "name_course_5": "Professional course work with VS Code",
    "totalTimeLearn_5": 1.5,
    "priceCours_5": 1.59,
+   "priceCours_5_off_text": "off",
    "name_course_6": "Responsive web design course",
    "totalTimeLearn_6": 14,
    "priceCours_6": 10,
@@ -77,5 +78,11 @@
    "box_5_num_1": "2019",
    "box_5_num_2": "2016",
    "box_6_num_1": "2016",
-   "box_6_num_2": "2014"
+   "box_6_num_2": "2014",
+
+   "account_name": "ali donyaee",
+   "account_email": "alidonyaee@gmail.com",
+
+   "cart_non_products": "You have no products",
+   "cart_go_products": "Let's go to the store"
 }

@@ -4,17 +4,30 @@ import { FiInstagram } from "react-icons/fi";
 import { FaTelegramPlane, FaYoutube, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import img from "../Assets/zarinPale.svg";
 
+const iconsLink = [
+	{ link: "https://www.instagram.com/sahebmohamadi.ir/", icons: FiInstagram },
+	{
+		link: "https://www.linkedin.com/in/saheb-mohamadi-227ab4112?originalSubdomain=ir",
+		icons: FaLinkedin,
+	},
+	{ link: "https://github.com/sahebmohammadi", icons: FaGithub },
+	{ link: "https://twitter.com/mohamadisaheb", icons: FaTwitter },
+	{ link: "https://t.me/fronthooks", icons: FaTelegramPlane },
+	{ link: "https://www.youtube.com/channel/UCJwBq05vX977h-uqNhwWzBA", icons: FaYoutube },
+];
+
 const Footer = () => {
 	const { t } = useTranslation();
 
-	const iconsLink = [
-		{ path: "", icons: <FiInstagram /> },
-		{ path: "", icons: <FaLinkedin /> },
-		{ path: "", icons: <FaGithub /> },
-		{ path: "", icons: <FaTwitter /> },
-		{ path: "", icons: <FaTelegramPlane /> },
-		{ path: "", icons: <FaYoutube /> },
-	];
+	const Ui_IconsFooter = (link, Icon) => {
+		return (
+			<li className="text-2xl text-gray-500 dark:text-gray-300">
+				<a href={link}>
+					<Icon />
+				</a>
+			</li>
+		);
+	};
 
 	return (
 		<footer className="pb-8 mb-16 sm:mb-0 border-t-4 border-solid border-purple-500 rounded-tl-lg rounded-tr-lg w-full h-auto sm:h-[45vh] bg-gray-100 dark:bg-main-dark">
@@ -25,10 +38,8 @@ const Footer = () => {
 						<p className="text-sm text-gray-500 dark:text-gray-400 leading-7">{t("text_footer")}</p>
 						<div className="w-full h-auto">
 							<ul className="mt-4 flex justify-between items-center">
-								{iconsLink.map((i, index) => (
-									<IconButton key={index}>
-										<li className="text-2xl text-gray-500 dark:text-gray-300">{i.icons}</li>
-									</IconButton>
+								{iconsLink.map(({ link, icons }) => (
+									<IconButton key={link}>{Ui_IconsFooter(link, icons)}</IconButton>
 								))}
 							</ul>
 						</div>
@@ -38,7 +49,7 @@ const Footer = () => {
 					</div>
 				</section>
 				<section className="mx-auto mt-2 w-[95%] sm:w-full text-gray-500 dark:text-white">
-					<p>{t("version_footer")}</p>
+					<p>❤ {t("version_footer")} ❤</p>
 				</section>
 			</div>
 		</footer>
